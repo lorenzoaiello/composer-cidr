@@ -1,6 +1,6 @@
 <?php
 
-namespace Cidr;
+namespace lorenzoaiello\Cidr;
 
 class CIDR
 {
@@ -8,11 +8,11 @@ class CIDR
      * compare an IPv4 or IPv6 address with one or more CIDR addresses and ranges
      *
      * @param string $ip a valid IPv6 address
-     * @param string $cidr  a valid IPv6 subnet[/mask]
+     * @param string|array $cidr  a valid IPv6 subnet[/mask]
      *
      * @return boolean whether $address is within the ip range made up of the subnet and mask
      */
-    public static function checkMatch($ip, $cidr)
+    public static function matchMulti($ip, $cidr)
     {
         // when a single cidr is provided, pass it along
         if (!is_array($cidr)) {
@@ -23,11 +23,11 @@ class CIDR
         foreach($cidr as $block) {
             $result = self::match($ip, $block);
             if(!$result) {
-                return false;
+                return true;
             }
         }
         
-        return true;
+        return false;
     }
     
     /**

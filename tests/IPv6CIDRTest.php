@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-use Cidr\CIDR;
+use lorenzoaiello\Cidr\CIDR;
 use PHPUnit\Framework\TestCase;
 
 final class IPv6CIDRTest extends TestCase
