@@ -8,7 +8,7 @@ final class IPv4CIDRTest extends TestCase
 {
     public function testIPv4MatchMultiple()
     {
-        $this->assertTrue(CIDR::matchMulti('10.1.2.3',['172.31.0.0/16', '10.0.0/8']));
+        $this->assertTrue(CIDR::matchMulti('10.1.2.3',['172.31.0.0/16', '10.0.0.0/8']));
     }
     
     public function testIPv4MatchSingle()

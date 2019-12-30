@@ -22,7 +22,7 @@ class CIDR
         // loop through all cidrs and check for matches
         foreach($cidr as $block) {
             $result = self::match($ip, $block);
-            if(!$result) {
+            if($result) {
                 return true;
             }
         }
