@@ -21,6 +21,10 @@ class CIDR
         
         // loop through all cidrs and check for matches
         foreach($cidr as $block) {
+            if($block == ''){
+                continue;
+            }
+            
             $result = self::match($ip, $block);
             if($result) {
                 return true;
