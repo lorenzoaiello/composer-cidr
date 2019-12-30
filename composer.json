@@ -1,6 +1,5 @@
 {
     "name": "lorenzo/composer-cidr",
-    "version": "1.0.0",
     "description": "Package for manipulating CIDRs and matching IP addresses",
     "type": "library",
     "license": "MIT",
@@ -10,7 +9,7 @@
             "email": "lorenzo@aiello.family"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "php": ">=7.2.0"
     },
