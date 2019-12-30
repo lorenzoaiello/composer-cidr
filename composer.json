@@ -1,5 +1,5 @@
 {
-    "name": "lorenzo/composer-cidr",
+    "name": "lorenzoaiello/cidr",
     "description": "Package for manipulating CIDRs and matching IP addresses",
     "type": "library",
     "license": "MIT",
