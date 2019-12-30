@@ -1,0 +1,25 @@
+{
+    "name": "lorenzo/composer-cidr",
+    "version": "1.0.0",
+    "description": "Package for manipulating CIDRs and matching IP addresses",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lorenzo Aiello",
+            "email": "lorenzo@aiello.family"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cidr\\": "src/"
+        }
+    }
+}
